@@ -38,3 +38,10 @@ Quarterly security review: dependency-exposure section. Scope: two npm packages 
 2. For axios, note most 2026 issues are "prototype-pollution gadgets": they require a separate prototype-pollution primitive in the same process, so remediating known PP sources (e.g., old lodash, qs, minimist) reduces risk on both fronts.
 3. Avoid passing untrusted input to `_.template` `options.imports` key names.
 4. Track remediation in the audit repository issues.
+
+## References
+
+- lodash audit issue: https://github.com/mcpmark-eval-liuhezi/dependency-audit-2026/issues/4
+- axios audit issue: https://github.com/mcpmark-eval-liuhezi/dependency-audit-2026/issues/5
+- lodash advisory: GHSA-jf85-cpcp-j695 (https://github.com/advisories/GHSA-jf85-cpcp-j695)
+- axios advisory: GHSA-x97p-jq2g-jp4f (https://github.com/advisories/GHSA-x97p-jq2g-jp4f)
